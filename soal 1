@@ -1,0 +1,72 @@
+Soal Laporan 1
+1. Jelaskan konsep OOP pada PHP:
+Pemrograman Berorientasi Objek (OOP) adalah suatu paradigma dalam pengembangan perangkat lunak yang digunakan dalam PHP (dan banyak bahasa pemrograman lainnya) 
+untuk mengatur kode menjadi lebih terstruktur, modular, dan lebih mudah dipahami. OOP memungkinkan pengelompokan data (properti) dan operasi terkait (metode) ke dalam satu kesatuan yang disebut objek. 
+Berikut adalah penjelasan yang lebih mendalam mengenai OOP dalam PHP:
+
+a. Kelas (Class):
+   Kelas adalah suatu panduan atau cetakan yang digunakan untuk menciptakan objek. Dalam PHP, deklarasi kelas dilakukan dengan menggunakan kata kunci `class`.
+   Contoh sederhana deklarasi kelas dalam PHP adalah sebagai berikut:
+
+   ```php
+   class Pesawat {
+       // Properti
+       public $perusahaan;
+       public $jenis;
+
+       // Metode
+       public function start() {
+           echo "Pesawat diterbangkan.";
+       }
+   }
+   ```
+
+b. Objek (Object):
+   Objek adalah suatu instance konkret dari kelas. Objek diciptakan dengan menggunakan kata kunci `new`.
+   Berikut adalah contoh pembuatan objek dalam PHP:
+
+   ```php
+   $pesawat1 = new Pesawat();
+   $pesawat1->Perusahaan = "emirate";
+   $pesawat1->jenis = "Boeing";
+   ```
+
+c. Properti (Properties):
+   Properti adalah variabel yang digunakan untuk menyimpan data dalam objek.
+   Dalam contoh di atas, `$perusahaan` dan `$jenis` adalah properti dari kelas `Pesawat`.
+
+d. Metode (Methods):
+   Metode adalah fungsi yang terkait dengan kelas dan digunakan untuk menjalankan tindakan tertentu.
+   Pada contoh di atas, `start()` adalah metode yang terdapat dalam kelas `Pesawat`.
+
+   ```php
+   $pesawat1->start(); // Memanggil metode start()
+   ```
+
+e. Pewarisan (Inheritance):
+   Pewarisan adalah konsep di mana kelas baru (kelas turunan) dapat mewarisi properti dan metode dari kelas yang sudah ada (kelas induk). 
+   Dalam PHP, pewarisan dideklarasikan dengan kata kunci `extends`, yang memungkinkan penggunaan kembali kode.
+
+   ```php
+   class CombatAirplane extends Pesawat {
+       // Metode khusus untuk CombatAirplane
+       public function autopilot() {
+           echo "CombatAirplane dinyalakan autopilot.";
+       }
+   }
+   ```
+
+f. Polimorfisme (Polymorphism):
+   Polimorfisme memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda. 
+   Ini dapat dicapai melalui metode penggantian (overriding) atau dengan menggunakan interface dan kelas abstrak.
+
+g. Abstraksi (Abstraction):
+   Abstraksi adalah konsep di mana hanya fitur-fitur penting dari objek yang ditampilkan, sementara detail yang tidak diperlukan disembunyikan.
+   Hal ini dapat dicapai melalui penggunaan metode abstrak dan interface.
+
+h. Encapsulation:
+   Encapsulation adalah konsep di mana data (properti) dan metode yang beroperasi pada data tersebut digabungkan dalam satu unit (kelas).
+   Ini membantu dalam mengendalikan akses ke data dan mengikuti prinsip-prinsip keamanan data.
+
+Pendekatan OOP dalam PHP memungkinkan strukturisasi kode yang lebih baik, manajemen kompleksitas yang lebih efisien, serta memudahkan pemeliharaan dan pengembangan aplikasi. 
+Dengan pemahaman mendalam tentang konsep-konsep ini, Anda dapat membuat aplikasi PHP yang terstruktur dengan baik dan lebih mudah dikelola.
