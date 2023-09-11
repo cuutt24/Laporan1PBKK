@@ -1,5 +1,4 @@
 <?php
-include 'customer.php'; // Memasukkan file 'customer.php' yang berisi definisi kelas 'Customer'.
 include 'customerrepository.php'; // Memasukkan file 'customerrepository.php' yang berisi definisi kelas 'CustomerRepository'.
 
 // Membuat objek Customer
